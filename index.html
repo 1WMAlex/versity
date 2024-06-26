@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hustler's Coming Soon</title>
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Hustleversity is a networking platform you can only dream of. Coming soon!">
+        <meta name="keywords" content="Hustleversity, networking platform, coming soon, maintenance, business, connections">
+        <meta name="author" content="Hustleversity Team">
+        <meta property="og:title" content="Hustleversity - Coming Soon">
+        <meta property="og:description" content="A networking platform you can only dream of. Coming soon!">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:url" content="https://hustleversity.club">
+        <meta name="twitter:card" content="logo.png">
+        <meta name="twitter:title" content="Hustleversity - Coming Soon">
+        <meta name="twitter:description" content="A networking platform you can only dream of. Coming soon!">
+        <meta name="twitter:image" content="screenshot.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Business-3.jpg" type="image/x-icon">
+</head>
+<body>
+    <video autoplay loop muted poster="leather2.webp" id="background">
+        <source type="video/mp4" src="https://youtu.be/YZ13qxi2UVg">
+        <source type="video/webm" src="https://youtu.be/YZ13qxi2UVg">
+      </video>
+      <div class="main">
+        <div id='content'>
+          <div class='title'>
+            <span>HUSTLEVERSITY</span>
+          </div>
+          <p>COMING SOON!</p>
+          <section>
+            <ul id="countdown">
+              <li><span class="days timenumbers">01</span>
+                <p class="timeRefDays timedescription">days</p>
+              </li>
+              <li><span class="hours timenumbers">00</span>
+                <p class="timeRefHours timedescription">hours</p>
+              </li>
+              <li><span class="minutes timenumbers">00</span>
+                <p class="timeRefMinutes timedescription">minutes</p>
+              </li>
+              <li><span class="seconds timenumbers yellow-text">00</span>
+                <p class="timeRefSeconds timedescription">seconds</p>
+              </li>
+            </ul>
+            
+          </section>
+          <div class="container">
+          <button class="cool-button btn-1">Join Discord</button>
+        </div>
+          <p>OUR SITE IS CURRENTLY ON MAINTANENCE.</br></br>A NETWORKING PLATFORM YOU CAN ONLY DREAM OF IS COMING SOON</a></p>
+          
+        </div>
+        
+      </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <script>       
+        let hoverInterval;
+        function hover() {
+            clearInterval(hoverInterval);
+            var arrows = document.getElementById('arrows');
+
+            arrows.classList.toggle('visible');
+            hoverInterval = setInterval(() => {
+                if (arrows.innerText.length > 1) {
+                    arrows.innerText = ">>";
+                } else {
+                    arrows.innerText += ">";
+                }
+            }, 300);
+        }
+
+        function hoverOut() {
+            clearInterval(hoverInterval);
+            var arrows = document.getElementById('arrows');
+            arrows.classList.toggle('visible');
+            arrows.innerText = ">";
+            setTimeout(() => {
+                arrows.innerText = "";
+            }, 500); // Wait for the fade-out to complete before clearing text
+        }
+        window.open('')
+      </script>
+</body>
+</html>
